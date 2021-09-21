@@ -9,9 +9,6 @@ class Hat:
             for i in range(kwargs[a]):
                 self.contents.append(a)
         
-        self.balls = kwargs
-        
-    
     def draw(self, num):
         max = len(self.contents)
         if num > max: 
@@ -26,10 +23,6 @@ class Hat:
         return drawed
 
             
-    
-        
-
-
 def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
     successed = 0
     for i in range(num_experiments):
